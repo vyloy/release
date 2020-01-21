@@ -1,0 +1,11 @@
+[Unit]
+Description=Websocket tunnel server
+After=syslog.target network-online.target
+
+[Service]
+PIDFile=/var/run/wstunsrv.pid
+ExecStart=/usr/local/sbin/wstunnel srv -config /etc/wstunnel/wstunsrv.conf
+LimitNOFILE=1000000
+
+[Install]
+WantedBy=multi-user.target

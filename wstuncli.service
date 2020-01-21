@@ -1,0 +1,11 @@
+[Unit]
+Description=Websocket tunnel client
+After=network-online.target
+
+[Service]
+PIDFile=/var/run/wstuncli.pid
+ExecStart=/usr/local/sbin/wstunnel cli -config /etc/wstunnel/wstuncli.conf
+LimitNOFILE=65535
+
+[Install]
+WantedBy=multi-user.target

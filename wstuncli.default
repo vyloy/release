@@ -1,0 +1,24 @@
+# Rendez-vous token: the HTTP client at the other end needs to use the same token to rendez-vous
+# with the client running here. Use something secret!
+TOKEN=test123test123test123
+
+# Local server to which HTTP requests are forwarded, this is the web server to which requests
+# are being tunneled.
+SERVER=http://localhost
+
+# Remote websockets tunnel endpoint to which this client connects to
+# TUNNEL=ws://test.com
+TUNNEL=ws://ec2-54-219-186-209.us-west-1.compute.amazonaws.com
+
+# Log path
+LOG=/var/log/wstuncli.log
+
+# Parallel
+PARALLEL=10
+
+# Tunnel certs
+#CERT=/home/centos/keys/rsa/ca.cert
+#CERT=/home/centos/keys/ec/ca.cert
+
+# Tunnel Insecure
+INSECURE=false
