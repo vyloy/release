@@ -13,7 +13,7 @@ if [[ ! -s ${CONFIG_FILE} ]]; then
  sudo mkdir -p ${CONFIG_PATH}
  sudo chown root:wheel ${CONFIG_PATH}
  sudo chmod 775 ${CONFIG_PATH}
- curl -o ${CONFIG_FILE} -fsSL "${DOWNLOAD_URL}/wstunsrv.default"
+ curl -o ${CONFIG_FILE} -fsSL "${DOWNLOAD_URL}/wstunsrv.conf"
 else
  echo "skip installing config file."
 fi
