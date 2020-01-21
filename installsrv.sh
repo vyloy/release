@@ -30,7 +30,9 @@ curl -o "${SERVICE_FILE}" -fsSL "${DOWNLOAD_URL}/wstunsrv.service"
 
 echo "cat ${CONFIG_FILE}"
 echo "=================================================="
+echo ""
 cat ${CONFIG_FILE}
+echo ""
 echo "=================================================="
 echo ""
 echo "Please edit config file ${CONFIG_FILE}."

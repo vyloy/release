@@ -21,4 +21,4 @@ PARALLEL=10
 #CERT=/home/centos/keys/ec/ca.cert
 
 # Tunnel Insecure
-INSECURE=false
+TUNNEL_INSECURE=false
